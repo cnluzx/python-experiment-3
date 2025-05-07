@@ -1,6 +1,11 @@
 from matplotlib import pyplot as plt    
 
 def lagrange(data,testdata):
+    """
+    parameters:
+    data: list of tuples, each tuple contains [x, y] coordinates
+    test data : target point [x,y] coordinates
+    """
     predict=0
     data_x=[data[i][0] for i in range(len(data))]
     data_y=[data[i][1] for i in range(len(data))]
