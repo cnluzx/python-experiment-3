@@ -5,6 +5,7 @@ def lagrange_method(data, testdata):
     data: list of tuples, each tuple contains [x, y] coordinates
     testdata : target x coordinate (float)
     """
+
     predict = 0
     data_x = [data[i][0] for i in range(len(data))]
     data_y = [data[i][1] for i in range(len(data))]
@@ -86,3 +87,6 @@ def spline_method(data, testdata):
 
     # 如果 testdata 不在插值范围内，可以选择抛出异常或返回None
     return None
+
+
+
